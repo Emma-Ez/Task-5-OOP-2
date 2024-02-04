@@ -83,3 +83,17 @@ class Goldfish extends Fish {
       console.log(`${this.name} is blowing bubbles.`);
     }
 }
+
+// Usage example
+const bingo = new Dog("Bingo", "German shepherd");
+const goldie = new Goldfish("Goldie");
+  
+// Accessing attributes and methods
+console.log(bingo.name);
+console.log(goldie.type);
+bingo.move();
+bingo.fetch();
+
+goldie.makeSound();
+goldie.move();
+goldie.blowBubbles();

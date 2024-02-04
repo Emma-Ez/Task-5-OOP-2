@@ -46,3 +46,36 @@ class Animal {
 // Examples of Subclasses
 const Fish = Animal.createSubclass(Animal, "fish");
 const Mammal = Animal.createSubclass(Animal, "mammal");
+
+// Specific Subclass for Dogs
+class Dog extends Mammal {
+    constructor(name, breed) {
+      super(name);
+      this.breed = breed;
+    }
+  
+    // Polymorphism: Override the move method with a specific behavior for dogs.
+    move() {
+      console.log("Walking or running");
+    }
+    // Additional method for demonstration of a specific action for dogs.
+    fetch() {
+      console.log(`${this.name} is fetching.`);
+    }
+}
+
+// Specific Subclass for Goldfish
+class Goldfish extends Fish {
+    constructor(name) {
+      super(name);
+    } 
+    // Polymorphism: Override the move method with a specific behavior for goldfish.
+    move() {
+      console.log("Swimming");
+    }
+  
+    // Additional method for demonstration of a specific action for goldfish.
+    blowBubbles() {
+      console.log(`${this.name} is blowing bubbles.`);
+    }
+}

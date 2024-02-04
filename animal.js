@@ -46,6 +46,10 @@ class Animal {
 // Examples of Subclasses
 const Fish = Animal.createSubclass(Animal, "fish");
 const Mammal = Animal.createSubclass(Animal, "mammal");
+const Arthropoda = Animal.createSubclass(Animal, "arthropoda");
+const Amphibia = Animal.createSubclass(Animal, "amphibia");
+const Repitiles = Animal.createSubclass(Animal, "repitiles");
+const Aves = Animal.createSubclass(Animal, "aves");
 
 // Specific Subclass for Dogs
 class Dog extends Mammal {

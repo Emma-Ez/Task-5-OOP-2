@@ -37,3 +37,8 @@ class Animal {
        throw new Error("This method must be implemented in subclasses");
     }
    
+     // Abstraction: Common method providing a generic animal sound.
+    makeSound() {
+        console.log("Generic animal sound");
+    }
+}

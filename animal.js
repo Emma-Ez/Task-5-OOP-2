@@ -24,10 +24,16 @@ class Animal {
     // Encapsulation: Getters and setters for controlled access to properties.
     get scientificName() {
         return this.genus + " " + this.species;
-      }
+    }
     
-      set scientificName(value) {
+    set scientificName(value) {
         const parts = value.split(" ");
         this.genus = parts[0];
         this.species = parts[1];
-      }
+    }
+
+    // Polymorphism: Abstract method that must be implemented in subclasses.
+    move() {
+       throw new Error("This method must be implemented in subclasses");
+    }
+   

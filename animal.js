@@ -42,3 +42,7 @@ class Animal {
         console.log("Generic animal sound");
     }
 }
+
+// Examples of Subclasses
+const Fish = Animal.createSubclass(Animal, "fish");
+const Mammal = Animal.createSubclass(Animal, "mammal");

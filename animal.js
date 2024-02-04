@@ -63,8 +63,8 @@ class Dog extends Mammal {
       console.log("Walking or running");
     }
     // Additional method for demonstration of a specific action for dogs.
-    fetch() {
-      console.log(`${this.name} is fetching.`);
+    bark() {
+      console.log(`${this.name} is barking.`);
     }
 }
 
@@ -75,7 +75,7 @@ class Goldfish extends Fish {
     } 
     // Polymorphism: Override the move method with a specific behavior for goldfish.
     move() {
-      console.log("Swimming");
+      console.log(`My name is ${this.name}, and i can swim`);
     }
   
     // Additional method for demonstration of a specific action for goldfish.
@@ -92,7 +92,7 @@ const goldie = new Goldfish("Goldie");
 console.log(bingo.name);
 console.log(goldie.type);
 bingo.move();
-bingo.fetch();
+bingo.bark();
 
 goldie.makeSound();
 goldie.move();

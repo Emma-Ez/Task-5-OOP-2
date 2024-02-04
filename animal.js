@@ -6,3 +6,17 @@ class Animal {
       this.habitat = null;
       this.coldBlooded = coldBlooded;
     }
+    // Inheritance: Allows creating subclasses for specific animal groups.
+    static createSubclass(parentType, subclassName) {
+      class Subclass extends Animal {
+        constructor(name) {
+          super(name, subclassName, parentType.coldBlooded);
+        }
+        // Polymorphism: Represents a specific behavior related to this animal classification.
+        specificBehavior() {
+          console.log(`${this.name} exhibits specific behavior characteristic of ${subclassName}.`);
+        }
+      }
+  
+      return Subclass;
+    }
